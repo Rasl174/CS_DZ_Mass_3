@@ -25,16 +25,16 @@ namespace CS_DZ_Mass_3
                 localMaximum += array[0] + " ";
             }
 
-            for (int j = 1; j < array.GetLength(0) ; j++)
+            for (int j = 1; j < array.GetLength(0) - 1; j++)
             {
-                if ((j == array.GetLength(0) - 1) && (array[array.GetLength(0) - 1] > array[array.GetLength(0) - 2]))
-                {
-                    localMaximum += array[array.GetLength(0) - 1];
-                }
                 if (array[j] > array[j - 1] && array[j] > array[j + 1])
                 {
                     localMaximum += array[j] + " ";
                 }
+            }
+            if (array[29] > array[28])
+            {
+                localMaximum += array[29] + " ";
             }
             Console.WriteLine("\nЛокальные максимумы: " + localMaximum);
         }
