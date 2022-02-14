@@ -13,7 +13,6 @@ namespace CS_DZ_Mass_3
             Random random = new Random();
             string localMaximum = "";
             int[] array = new int[30];
-            int maxLength = 0;
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -37,9 +36,6 @@ namespace CS_DZ_Mass_3
             {
                 localMaximum += array[array.Length-1];
             }
-           
-           
-
             Console.WriteLine("\nЛокальные максимумы: " + localMaximum);
         }
     }
